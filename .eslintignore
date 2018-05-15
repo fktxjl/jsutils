@@ -3,11 +3,4 @@ node_modules/
 
 # Coverage directory used by tools like istanbul
 coverage
-
-# Yarn Integrity file
-.yarn-integrity
-package-lock.json
-.DS_Store
-.cache
-converage
-.vscode
+docs
