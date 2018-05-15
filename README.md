@@ -5,7 +5,7 @@ javascript 里一些常用的工具库
 使用
 --------
 
-文档地址：https://fktxjl.github.io/utils/
+文档地址：https://fktxjl.github.io/utils/index.html
 
 自动化脚本
 ----------
