@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Home - Documentation</title>
+    <title>equalArrays.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -27,29 +27,45 @@
 
 <div id="main">
     
+    <h1 class="page-title">equalArrays.js</h1>
+    
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @fileOverview 比较两个数组
+ * @module equalArrays
+ */
 
-
-
-
-
-
-
-
-
-    
-
-
-    <section class="readme">
-        <article><h2>utils</h2></article>
+/**
+ * 比较两个数组是否一致
+ * @author   fktxjl     https://github.com/fktxjl
+ * @param    {Array}   [array, array]         - 数组
+ *
+ * @return   {Boolean}
+ *
+ * @example
+ *
+ * const arr1 = [1, 2, 3];
+ *
+ * const arr2 = [1, 2, 3];
+ *
+ * const b = equalArrays.isValid(arr1, arr2);
+ *
+ * console.log(b); // true
+ */
+exports.isValid = function (a, b) {
+  if (JSON.stringify(a) !== JSON.stringify(b)) return false
+  return true
+}
+</code></pre>
+        </article>
     </section>
-
-
 
 
 

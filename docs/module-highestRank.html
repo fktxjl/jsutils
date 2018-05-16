@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>email - Documentation</title>
+    <title>highestRank - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -27,7 +27,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">email</h1>
+    <h1 class="page-title">highestRank</h1>
     
 
     
@@ -49,7 +49,7 @@
     <div class="container-overview">
     
         
-            <div class="description"><p>邮箱工具库</p></div>
+            <div class="description"><p>返回在给定的输入数组中最频繁的数字。如果对于最频繁的数字有好几个，则返回其中最大的数。</p></div>
         
 
         
@@ -63,7 +63,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="email.js.html">email.js</a>, <a href="email.js.html#line1">line 1</a>
+        <a href="highestRank.js.html">highestRank.js</a>, <a href="highestRank.js.html#line1">line 1</a>
     </li></ul></dd>
     
 
@@ -150,7 +150,7 @@
 
     
 
-    <h4 class="name" id=".isValid"><span class="type-signature">(static) </span>isValid<span class="signature">(email)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+    <h4 class="name" id=".highestRank"><span class="type-signature">(static) </span>highestRank<span class="signature">(array)</span><span class="type-signature"> &rarr; {number}</span></h4>
 
     
 
@@ -162,7 +162,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="email.js.html">email.js</a>, <a href="email.js.html#line19">line 19</a>
+        <a href="highestRank.js.html">highestRank.js</a>, <a href="highestRank.js.html#line28">line 28</a>
     </li></ul></dd>
     
 
@@ -209,7 +209,7 @@
 
 
 <div class="description">
-    <p>检查邮箱是否有效</p>
+    <p>返回在给定的输入数组中最频繁的数字</p>
 </div>
 
 
@@ -222,9 +222,17 @@
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>const b = email.isValid('123456@qq.com');
+    <pre class="prettyprint"><code>const arr = [12, 10, 8, 12, 7, 6, 4, 10, 12];
 
-console.log(b); // true</code></pre>
+highestRank(arr) //=> returns 12
+
+const arr = [12, 10, 8, 12, 7, 6, 4, 10, 12, 10];
+
+highestRank(arr) //=> returns 12
+
+const arr = [12, 10, 8, 8, 3, 3, 3, 3, 2, 4, 10, 12, 10];
+
+highestRank(arr) //=> returns 3</code></pre>
 
 
 
@@ -254,13 +262,13 @@ console.log(b); // true</code></pre>
 
         <tr>
             
-                <td class="name"><code>email</code></td>
+                <td class="name"><code>array</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">Array</span>
 
 
             
@@ -270,7 +278,7 @@ console.log(b); // true</code></pre>
 
             
 
-            <td class="description last"><p>邮箱地址</p></td>
+            <td class="description last"><p>数组</p></td>
         </tr>
 
     
@@ -301,7 +309,7 @@ console.log(b); // true</code></pre>
     </dt>
     <dd>
         
-<span class="param-type">Boolean</span>
+<span class="param-type">number</span>
 
 
     </dd>
