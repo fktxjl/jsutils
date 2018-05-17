@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>highestRank - Documentation</title>
+    <title>digitalRoot - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -27,7 +27,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">highestRank</h1>
+    <h1 class="page-title">digitalRoot</h1>
     
 
     
@@ -49,7 +49,7 @@
     <div class="container-overview">
     
         
-            <div class="description"><p>返回在给定的输入数组中最频繁的数字。如果对于最频繁的数字有好几个，则返回其中最大的数。</p></div>
+            <div class="description"><p>给定n，取n的数字之和，如果该值有两个数字，继续以这种方式减少直到产生一个位数</p></div>
         
 
         
@@ -63,7 +63,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="highestRank.js.html">highestRank.js</a>, <a href="highestRank.js.html#line1">line 1</a>
+        <a href="digitalRoot.js.html">digitalRoot.js</a>, <a href="digitalRoot.js.html#line1">line 1</a>
     </li></ul></dd>
     
 
@@ -150,7 +150,7 @@
 
     
 
-    <h4 class="name" id=".highestRank"><span class="type-signature">(static) </span>highestRank<span class="signature">(array)</span><span class="type-signature"> &rarr; {number}</span></h4>
+    <h4 class="name" id=".digitalRoot"><span class="type-signature">(static) </span>digitalRoot<span class="signature">(number)</span><span class="type-signature"> &rarr; {number}</span></h4>
 
     
 
@@ -162,7 +162,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="highestRank.js.html">highestRank.js</a>, <a href="highestRank.js.html#line28">line 28</a>
+        <a href="digitalRoot.js.html">digitalRoot.js</a>, <a href="digitalRoot.js.html#line25">line 25</a>
     </li></ul></dd>
     
 
@@ -209,7 +209,7 @@
 
 
 <div class="description">
-    <p>返回在给定的输入数组中最频繁的数字</p>
+    <p>给定n，取n的数字之和，如果该值有两个数字，继续以这种方式减少直到产生一个位数</p>
 </div>
 
 
@@ -222,17 +222,13 @@
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>const arr = [12, 10, 8, 12, 7, 6, 4, 10, 12];
+    <pre class="prettyprint"><code>digital_root(16) => 1 + 6 => 7
 
-highestRank(arr) //=> returns 12
+digital_root(942) => 9 + 4 + 2 => 15 ... => 1 + 5 => 6
 
-const arr = [12, 10, 8, 12, 7, 6, 4, 10, 12, 10];
+digital_root(132189) => 1 + 3 + 2 + 1 + 8 + 9 => 24 ... => 2 + 4 => 6
 
-highestRank(arr) //=> returns 12
-
-const arr = [12, 10, 8, 8, 3, 3, 3, 3, 2, 4, 10, 12, 10];
-
-highestRank(arr) //=> returns 3</code></pre>
+digital_root(493193) => 4 + 9 + 3 + 1 + 9 + 3 => 29 ... => 2 + 9 => 11 ... => 1 + 1 => 2</code></pre>
 
 
 
@@ -262,13 +258,13 @@ highestRank(arr) //=> returns 3</code></pre>
 
         <tr>
             
-                <td class="name"><code>array</code></td>
+                <td class="name"><code>number</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array</span>
+<span class="param-type">Number</span>
 
 
             
@@ -278,7 +274,7 @@ highestRank(arr) //=> returns 3</code></pre>
 
             
 
-            <td class="description last"><p>数组</p></td>
+            <td class="description last"><p>数字</p></td>
         </tr>
 
     
